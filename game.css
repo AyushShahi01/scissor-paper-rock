@@ -1,0 +1,24 @@
+*{
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
+   
+    
+}
+
+h1{
+    background-color: #fdffb6;
+    text-align: center;
+    justify-content: center;
+    font-size: 15 rem;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    gap: 5 rem;
+}
+
+#robot{
+    justify-content: center;
+}
