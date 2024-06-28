@@ -1,0 +1,45 @@
+html{
+    background-color: bisque;
+}
+
+
+.img-div{
+    margin: auto;
+    height: 200px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.img{
+    height: 200px;
+    width: 450px;
+}
+
+  h1{
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+    font-family: cursive;
+    
+  }
+
+
+.strBut{
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+  .start{
+    padding: 20px 40px;
+    border-radius: 10%;
+    background-color:gold;
+    text-decoration: none;
+  }
+
+  .startA{
+    font-size: 35px;
+    text-decoration: none;
+  }
