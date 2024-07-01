@@ -33,7 +33,16 @@
 
 /* round */
     .round{
-        position: static;
-        right: 100%;
-
+        font-size: 25px;
     }
+
+/* table */
+    .table{
+        border: solid black;
+         text-align: center;
+        font-size: 30px;
+        border-style: solid;
+        margin:3vw 20vw;
+    }
+
+    
