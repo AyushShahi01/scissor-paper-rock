@@ -63,11 +63,16 @@
 }
 
 .userInput{
-    
-    border: solid;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 20%;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+
+    gap: 7vw;
+    object-fit: cover;
+
+}
+
+
+.life{
+    padding-left: 80%;
 }
 
