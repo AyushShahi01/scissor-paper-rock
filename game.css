@@ -32,7 +32,7 @@
             }
 
 /* round */
-    .round{
+    .wins{
         font-size: 25px;
         
     }
@@ -73,6 +73,7 @@
 
 
 .life{
+    font-size: 25px;
     padding-left: 80%;
 }
 
