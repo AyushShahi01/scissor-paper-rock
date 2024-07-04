@@ -9,7 +9,9 @@ let userInput=document.querySelectorAll(".userInput");
 
 
 
-
+function input(i){
+    console.log(i);
+}
 
 
 let roundCounter=0;
@@ -20,21 +22,9 @@ round.innerText="Wins : "+roundCounter;
 life.innerText="Life = "+ lifeConuter;
 
 
+
+
 for(let i=0; i<3; i++){
-    userInput[i].addEventListener("click",()=>{
-        if(i==0){
-            playerMove="rock";
-            console.log(i);
-        }
-        else if(i==1){
-            playerMove="paper";
-            console.log(i);
-        }
-        else{
-            playerMove="scissor";
-            console.log(i);
-        }
-        
-    });
+    userInput[i].addEventListener("click",input(i));
 
 }
