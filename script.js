@@ -7,7 +7,9 @@ let round=document.querySelector(".wins");
 let life=document.querySelector(".life");
 let userInput=document.querySelectorAll(".userInput");
 
-
+display(){
+    console.log("event listner worked");
+}
 
 function input(i){
     console.log(i);
@@ -23,8 +25,4 @@ life.innerText="Life = "+ lifeConuter;
 
 
 
-
-for(let i=0; i<3; i++){
-    userInput[i].addEventListener("click",input(i));
-
-}
+userInput[0].addEventListener("click",display())
