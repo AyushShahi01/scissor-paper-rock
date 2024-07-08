@@ -3,7 +3,7 @@ console.log("script exicute");
 
 
 
-let round=document.querySelector(".wins");
+let win=document.querySelector(".wins");
 let life=document.querySelector(".life");
 let userInput=document.querySelectorAll(".option");
 
@@ -16,9 +16,6 @@ function display(i){
     console.log("event listner worked  "+i);
 }
 
-function input(i){
-    console.log(i);
-}
 
 function    computerAction(){
     let randomNum= Math.floor(Math.random()*3);
@@ -37,15 +34,58 @@ function    computerAction(){
 }
 
 function result(i,j){
-    if()
+    if(i==0){
+        if(j==1){
+            comment.innerText="Win";
+            winCounter++;
+            win.innerText=winCounter;
+        }
+        else if(j==1){
+            comment.innerText="Lose";
+            lifeConuter--;
+            life.innerText=lifeCounter;
+        }
+        else{
+            comment.innerText="Draw";
+        }
+    }
+    if(i==1){
+        if(j==2){
+            comment.innerText="Win";
+            winCounter++;
+            win.innerText=winCounter;
+        }
+        else if(j==0){
+            comment.innerText="Lose";
+            lifeConuter--;
+            life.innerText=lifeCounter;
+        }
+        else{
+            comment.innerText="Draw";
+        }
+    }
+    if(i==2){
+        if(j==1){
+            comment.innerText="Win";
+            winCounter++;
+            win.innerText=winCounter;
+        }
+        else if(j==0){
+            comment.innerText="Lose";
+            lifeConuter--;
+            life.innerText=lifeCounter;
+        }
+        else{
+            comment.innerText="Draw";
+        }
+    }
 }
 
-let roundCounter=0;
+let winCounter=0;
 let lifeConuter=3;
 let playerMove;
-let j=0;
-
-round.innerText="Wins : "+roundCounter;
+let j;
+win.innerText="Wins : "+winCounter;
 life.innerText="Life = "+ lifeConuter;
 
 
@@ -61,10 +101,12 @@ for(let i=0; i<3; i++){
             case(1):
                 player.innerText="Paper";
                 j=computerAction();
+                result(i,j);
                 break;
             case(2):
                 player.innerText="Scissor";
                 j=computerAction();
+                result(i,j);
                 break;
         }   
             
