@@ -35,7 +35,7 @@ function    computerAction(){
 
 function result(i,j){
     if(i==0){
-        if(j==1){
+        if(j==2){
             comment.innerText="Win";
             winCounter++;
             win.innerText=winCounter;
@@ -50,15 +50,15 @@ function result(i,j){
         }
     }
     if(i==1){
-        if(j==2){
+        if(j==0){
             comment.innerText="Win";
             winCounter++;
             win.innerText=winCounter;
         }
-        else if(j==0){
+        else if(j==2){
             comment.innerText="Lose";
             lifeConuter--;
-            life.innerText=lifeCounter;
+            life.innerText=lifeConuter;
         }
         else{
             comment.innerText="Draw";
