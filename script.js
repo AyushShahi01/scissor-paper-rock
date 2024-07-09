@@ -38,12 +38,12 @@ function result(i,j){
         if(j==2){
             comment.innerText="Win";
             winCounter++;
-            win.innerText=winCounter;
+            win.innerText="Win = "+winCounter;
         }
         else if(j==1){
             comment.innerText="Lose";
             lifeConuter--;
-            life.innerText=lifeCounter;
+            life.innerText="Life = "+lifeConuter;
         }
         else{
             comment.innerText="Draw";
@@ -53,12 +53,12 @@ function result(i,j){
         if(j==0){
             comment.innerText="Win";
             winCounter++;
-            win.innerText=winCounter;
+            win.innerText="Win = "+winCounter;
         }
         else if(j==2){
             comment.innerText="Lose";
             lifeConuter--;
-            life.innerText=lifeConuter;
+            life.innerText="Life = "+lifeConuter;
         }
         else{
             comment.innerText="Draw";
@@ -68,12 +68,12 @@ function result(i,j){
         if(j==1){
             comment.innerText="Win";
             winCounter++;
-            win.innerText=winCounter;
+            win.innerText="Win = "+winCounter;
         }
         else if(j==0){
             comment.innerText="Lose";
             lifeConuter--;
-            life.innerText=lifeCounter;
+            life.innerText="Life = "+lifeConuter;
         }
         else{
             comment.innerText="Draw";
@@ -110,6 +110,8 @@ for(let i=0; i<3; i++){
                 break;
         }   
             
-
+        if(lifeConuter==0){
+            location.replace("result.html")
+        }
     });
 }
