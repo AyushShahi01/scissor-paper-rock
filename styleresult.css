@@ -10,3 +10,22 @@ h1{
     font-family: cursive;
     
   }
+
+  
+
+.strBut{
+    display: flex;
+    justify-content: center;
+}
+
+  .start{
+    padding: 20px 40px;
+    border-radius: 10%;
+    background-color:gold;
+    text-decoration: none;
+  }
+
+  .startA{
+    font-size: 35px;
+    text-decoration: none;
+  }
